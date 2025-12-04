@@ -7,6 +7,7 @@ on:
   push:
     paths-ignore: # don't rebuild if only documentation has changed
       - "**.md"
+      - "patches-and-notes.txt"
 
   pull_request:
   workflow_dispatch: # allow manually triggering builds
@@ -40,3 +41,4 @@ jobs:
 
           # enabled by default, disable if your image is small and you want faster builds
           maximize_build_space: true
+          build_args: --no-cache
