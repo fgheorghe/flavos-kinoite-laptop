@@ -40,6 +40,7 @@ modules:
         - podman-tui
         - plocate
         - powertop
+        - grc
 
     remove:
       packages:
