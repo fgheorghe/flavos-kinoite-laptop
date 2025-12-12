@@ -41,7 +41,7 @@ modules:
         - plocate
         - powertop
         - grc
-
+        - fastfetch
     remove:
       packages:
         - firefox
